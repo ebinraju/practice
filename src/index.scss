@@ -49,11 +49,12 @@
           max-width: 300px;
         }
         button {
-          background-color: red;
-          border: red;
+          background-color: #EF7061;
+          border: #EF7061;
           width: 120px;
           height: 40px;
           color: white;
+          border-radius: 8px;
         }
       }
       .input-section {
@@ -73,14 +74,15 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 30px 0px;
 
     .section1-head {
       color: hsl(204, 40%, 21%);
       font-size: 30px;
-      font-weight: 800px;
       line-height: 30px;
       margin: 15px 80px;
-      max-width: 660px;
+      max-width: calc(100vh);
+      margin: auto;
       .h5 {
         font-weight: 700;
       }
@@ -106,6 +108,7 @@
     max-height: 900px;
     min-height: 800px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     &__left {
       margin-top: auto;
@@ -121,11 +124,12 @@
         color: white;
       }
       button {
-        background-color: red;
-        border: red;
+        background-color: #EF7061;
+        border: #EF7061;
         width: 120px;
         height: 40px;
         color: white;
+        border-radius: 8px;
       }
     }
     &__right {
@@ -145,7 +149,7 @@
         li {
           min-height: 50px;
           padding: 10px 0px;
-          border-bottom: 1px black solid;
+          border-bottom: 1px #455158 solid;
           display: flex;
           justify-content: center;
           .user-image {
@@ -163,13 +167,13 @@
             text-align: start;
             line-height: 20px;
             h4 {
-              color: white;
+              color: #ffffff;
               font-size: 16px;
               max-width: 300px;
               padding-bottom: 0px;
             }
             p {
-              color: gray;
+              color: #90999F;
               font-size: 14px;
             }
           }
@@ -182,24 +186,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 70px;
+    margin: 30px 70px;
     .text-section {
       height: 500px;
       text-align: start;
       min-width: 50%;
       padding-top: 200px;
       h2 {
-        font-size: 22px;
+        font-size: 24px;
       }
       p {
         font-size: 12px;
+        max-width: 300px;
+        color: #889399;
+        width: fit-content;
       }
       button {
-        background-color: blue;
-        border: blue;
+        background-color: #83BCC5;
+        border: #83BCC5;
         width: 120px;
         height: 40px;
         color: white;
+        border-radius: 8px;
       }
     }
     .image-area {
@@ -208,7 +216,7 @@
       grid-template-rows: repeat(8, 4vw);
       grid-gap: 10px;
       min-width: 50%;
-      max-width: 900px;
+      max-width: 600px;
       .gallery__img {
         width: 100%;
         height: 100%;
@@ -243,7 +251,7 @@
   .site-footer {
     display: flex;
     flex-direction: row;
-    border-top: 1px solid grey;
+    border-top: 1px solid #D8D8D8;
     margin: 10px 20px;
     padding-bottom: 10px;
     flex-wrap: wrap;
@@ -252,6 +260,8 @@
       flex-direction: column;
       padding: 0px 10px;
       min-width: 150px;
+      color: #2E2E31;
+      margin-top: 15px;
       h3 {
         margin-bottom: 10px;
         font-weight: 500;
